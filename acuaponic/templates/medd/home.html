@@ -37,7 +37,17 @@
             
         </div>
         <!-- The clear div for floating divs -->
-        <div class="clear"></div>
+        <div class="clear">
+            {% if medicina %}
+                {% for medicina in medicina %}
+                    <div class="medicina">
+                        <div class="name">
+                            <a href="">{{ medicina.nombre }} </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+            {% endif %}
+        </div>
     </div>
 </body>
 </html>

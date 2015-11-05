@@ -6,5 +6,5 @@ from . import views
 admin.autodiscover()
 
 urlpatterns = (
-    url(r'^$', views.display_medicine, name="displayMedicine")        
+    url(r'^$', views.display_medicine, name="displayMedicine"),        
 )

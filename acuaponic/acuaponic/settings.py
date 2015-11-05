@@ -54,10 +54,14 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'acuaponic.urls'
 
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            TEMPLATE_PATH,
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -107,3 +111,16 @@ MEDIA_ROOT = '/var/www/media/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = '/var/www/static/'
 STATIC_URL = '/static/'
+
+
+STATIC_URL = '/static/'
+
+STATIC_PATH = os.path.join(BASE_DIR, 'static',)
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static',)
+
+STATICFILES_DIRS = (
+            STATIC_PATH,
+            )
+
+
