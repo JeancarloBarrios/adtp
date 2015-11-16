@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+                <title>Medicinas De Don Freddy/Perry</title>
+            </head>
+            <body>
+                <a>  {{ medicina.nombre }} </a>
+                <a> {{ medicina.cantidad }} </a>
 
+                <form action="/med/serve/" method="post">
+                    {% csrf_token %}   
+                 <label for="med_name">Medicine ID: </label>
+                            <input id="med_name" type="text" name="name" value="{{ medicina.numero }}">
+                            <label for="med_qty">Medicine Quantity </label>
+
+                            <input id="med_qty" type="text" name="qty">
+
+                            <input type="submit" value="OK">
+                </form>
+            </body>
+        </html>

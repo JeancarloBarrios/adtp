@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
 <html lang="en-us">
-
+{% load static from staticfiles %}
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="{% static "static_root/style.css" %}" rel="stylesheet">
     <script src="scripts.js"></script>
     <title>Med Home</title>
 </head>
@@ -32,22 +33,23 @@
         
         <div id="Cart" class="mainDivs">
             <!-- Aqui va el titulo -->
-            <h1 margin="auto">Lista de compras:</h1>
+            <h1 margin="auto">Lista de medicinas:</h1>
             <!-- Aqui va la lista -->
             
-        </div>
-        <!-- The clear div for floating divs -->
-        <div class="clear">
+            <div class="clear">
             {% if medicina %}
                 {% for medicina in medicina %}
                     <div class="medicina">
                         <div class="name">
-                            <a href="">{{ medicina.nombre }} </a>
-                        </div>
+
+                            <h1> <a href="{% url "fredy" medicina.slug %}">{{ medicina.slug }}</a> </h1> 
+                            </div>
                     </div>
                     {% endfor %}
             {% endif %}
         </div>
+        </div>
+        <!-- The clear div for floating divs -->
     </div>
 </body>
 </html>

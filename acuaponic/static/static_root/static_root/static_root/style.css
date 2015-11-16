@@ -1,0 +1,56 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#Main {
+    font-family:"Times New Roman";
+    font-size: 12px;
+    background-color: cyan;
+    display: inline-block;
+    overflow: auto;
+    padding: 10px;
+    height: 95%;
+    width: 95%;
+}
+
+.mainDivs {
+    font-family:"Times New Roman";
+    background-color: #e5ff99;
+    padding: 10px;
+    display: inline-block;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    margin: auto;
+}
+
+#Header {
+    width: 96%;
+    height: 20%;
+}
+
+#Add {
+    width: 47%;
+    height: 100%;
+    float: left;
+}
+
+#Cart {
+    width: 47%;
+    height: 100%;
+    float: left;
+    overflow: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+#Quant {
+    width: 50px;
+}
+
+#EList {
+    width: 50px;
+}
