@@ -1,56 +1,486 @@
-html, body {
-    width: 100%;
+html, body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    background:#ffffff;
     height: 100%;
 }
 
-#Main {
-    font-family:"Times New Roman";
-    font-size: 12px;
-    background-color: cyan;
-    display: inline-block;
-    overflow: auto;
-    padding: 10px;
-    height: 95%;
-    width: 95%;
+
+*{
+    font-family: 'Nunito', sans-serif;
+
+}
+body{
+    height: 100%;
 }
 
-.mainDivs {
-    font-family:"Times New Roman";
-    background-color: blue;
-    padding: 10px;
+h1{
+    font-weight: bold;
+}
+.calendar-wrapper{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.calendar-wrapper table{
+
+    margin: auto;
+    width: 95%;
+    height: 400px;
+}
+
+table a{
+    color:#000000 ;
+}
+
+a.navbar-brand{
+    font-size: 30px;
+}
+
+.modal-dialog .modal-body table{
+    width: 100%;
+}
+
+.calendario-mes td:hover{
+    background-color: #006699;
+    opacity: 0.6;
+}
+.calendario-mes div:hover{
+    color: whitesmoke;
+}
+
+a.dropdown-toggle.avatar{
+    margin-right: 25px;
+}
+
+table.table-condensed.table-striped.medc-table tbody tr td a div{
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+}
+
+table.table-condensed.table-striped.medc-table tbody tr td a.nuevo-cuadro{
+    display: block;
+    height:100%;
+    width:100%;
+}
+
+table.table-condensed.table-striped.medc-table tbody tr td a div strong{
+}
+
+#page-content-wrapper.collapsed.collapsed {
+    margin-right: 185px;
+}
+
+div.row.row-centered b{
+    font-size: 50px;
+}
+
+div.now.row-centered a{
+    font-size: 20px;
+}
+div.now.row-centered{
+    margin-bottom: 20px;
+}
+
+.glyphicon{
+    margin-left: 15px;
+}
+
+
+.glyphicon.glyphicon-circle-arrow-left{
+    font-size: 35px;
+
+}
+.glyphicon.glyphicon-circle-arrow-right{
+    font-size: 35px;
+
+}
+
+.medc-table{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+.medc-table td{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btn-add-event{
+    margin-top: 50px;
+    background-color: #003366;
+    color: white;
+    font-size: 1.8em;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+}
+.btn-add-event:hover{
+    opacity: 0.9;
+}
+/*.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #eee;
+    opacity: 0.8;
+
+}*/
+.row-centered{
+    text-align: center;
+    margin: auto;
+
+}
+/*-------------CSS RECORDS---------------*/
+
+.records-tittle h1{
+    text-align: center;
+    margin: 30px;
+    display: block;
+    width: 60%;
     display: inline-block;
-    border-style: solid;
-    border-color: cyan;
-    border-width: 2px;
+
+}
+.records-tittle input{
+    float: right;
+    width: 20%;
+    margin: 30px;
+    display: inline-block;
+
+}
+.record{
+    margin-top: 15px;
+    height: 70px;
+    border-spacing: 2px;
+    border-color: grey;
+    border-top: 1px solid #ddd;
+    opacity: 0.8;
+    margin: auto;
+    padding-left: 15px;
+    line-height: 70px;
+}
+.records-container{
+    margin: auto;
+    width: 90%;
+
+}
+.record:nth-child(even){
+    background-color: #eee;
+}
+.search_form{
+    display: inline;
+    width: 25%;
+}
+.record_search{
+    background-color: #003366;
+    color: white;
+    font-size: 1.3em;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.record:hover{
+    opacity: 0.9;
+    background-color: lightblue;
+}
+
+div#page-content-wrapper{
+    margin-top: 50px;
+}
+
+div#page-content-wrapper b{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+div#page-content-wrapper form table tbody tr th label{
+    font-size: 20px;
+    font-weight: bold;
+}
+div#page-content-wrapper form table tbody tr td input{
+    margin-right: 15px;
+}
+div#page-content-wrapper form table tbody tr {
+    height: 70px;
+}
+
+div#page-content-wrapper form table tbody tr th{
+    min-width: 280px;
+    
+}
+
+div#page-content-wrapper form table tbody tr{
+     border-bottom: 1px dotted #ccc;
+}
+
+div#page-content-wrapper form table tbody tr td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+div#page-content-wrapper form input[type=submit] {
+        margin-top: 50px;
+    background-color: #003366;
+    color: white;
+    font-size: 1.8em;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+
+div#page-content-wrapper img.imagen-logo-formulario{
+    position: absolute;
+    top: 30%;
+    right: 8%;
+    width: 25%;
+}
+
+div.now{
+    margin-bottom: 20px;
+}
+
+div.now a{
+    font-size: 20px;
+}
+
+div.row.row-centered div[class^="col-"] div.row.row-centered a{
+    font-size: 15px;
+}
+div.row.row-centered div[class^="col-"] div.row.row-centered{
+    margin-bottom: 25px;
+}
+
+div.row.row-centered div.calendario-mes table.medc-table tbody tr td:nth-child(n+2){
+    width: 195px;
+}
+div.calendarname h1{
+    font-size: 70px;
+}
+div.records-tittle h1{
+    font-size: 50px;
+}
+div.records-tittle form.search_form input[type=text]{
+    width: 200px;
+    margin: 0;
+    display: inline-block;
+    float: none;
+}
+form.search_form{
+    position: relative;
+    top: -40px;
+}
+
+div.record div.name p{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+div.expediente_form label h1{
+    font-size: 50px;
+}
+
+div.expediente_form fieldset h2{
+    font-size: 35px;
+}
+
+div#page-content-wrapper form.form-horizontal{
+    display: block;
+}
+div.nav-tittle-info{
+    height: 100%;
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 40%;
+    margin-top: 10px; 
+}
+div.nav-tittle-info p{
+    display: inline-block;
+    margin-right: 50px;
+    font-weight: bold;
+}
+.nav.navbar-nav.navbar-right span{
+    display: inline-block;
+    margin-right: 50px;
+    font-weight: bold;
+    color:white;
+    float: left;
+    line-height: 50px;
+
+}
+.dropdown .dropdown-toggle.avatar{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2em;
+    color:white;
+    float: left;
+
+
+}
+.dropdown-menu li a.logout{
+    color: black;
+}
+/*----------------------Modulo Caja --------------------------*/
+
+.fecha_inicio{
+
+
+}
+
+.fecha_fin{
+
+
+}
+label.fecha_fin{
+    margin-right: 15px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+label.fecha_inicio{
+    margin-right: 15px;
+    display: inline-block;
+        margin-bottom: 25px;
+}
+
+h1.tittle-caja{
+    font-size: 50px;
+}
+
+
+
+div.search-container{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input.fecha_inicio{
+    margin-right: 60%;
+
+}
+
+div.container .tabla-caja{
+    width: 100%;
+}
+
+button.buton-caja{
+    margin-top: 5px;
+    background-color: #003366;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 20px;
+}
+button.buton-caja.nuevo-pago{
+    margin-top: 5px;
+    background-color: #003366;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 20px;
+    float: right;
+}
+
+div#tabla.container{
+    margin-top: 30px;
+}
+.datos-pago{
+    text-align: left;
+
+}
+label.datos-pago{
+    margin-right: 15px;
+
+}
+
+.tittle-nuevo-pago{
+    font-size: 50px;
+    font-weight: bold;
+}
+input.apellido, input.nombre{
+    margin-right: 15px;
+}
+
+.button-pago{
+    display: block;
+    margin-top: 5px;
+    width: 200px;
+    background-color: #003366;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+#fecha{
+
+    margin: 0;
+    text-align: left;
+
+}
+#id_items{
+
+    width: 200px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tittle-nuevo-pago{
+    margin-bottom: 20px;
+}
+.error-pago {
+    columns: red;
+    background-color: lightpink;
+}
+#datos input{
+
+}
+.exito-pago{
+    background-color: springgreen;
+    color: green;
+    width: 250px;
+
+}
+.container form#search_payment{
+    display: inline;
+
+}
+div#page-content-wrapper form{
+    display: inline-block;
+}
+
+.row-pagos:hover{
+    background-color: #417690;
+    color: black;
+
+}
+.welcome-message{
+    text-align: center;
+    margin: auto;
+    font-size: 3.5em;
+    color: #003366;
+}
+.welcome-image{
+    text-align: center;
     margin: auto;
 }
-
-#Header {
-    width: 96%;
-    height: 20%;
+.main-image{
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    height: 500px;
 }
 
-#Add {
-    width: 47%;
-    height: 100%;
-    float: left;
+/*------------ESTILO DE FORMULARIO DE INGRESO DE EXPEDIENTE-----------------*/
+
+div#page-content-wrapper form label[for^="id_"]{
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
-#Cart {
-    width: 47%;
-    height: 100%;
-    float: left;
-    overflow: auto;
+div#page-content-wrapper form select.form_class,div#page-content-wrapper form input.form_class{
+    display: block;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
-.clear {
-    clear: both;
-}
-
-#Quant {
-    width: 50px;
-}
-
-#EList {
-    width: 50px;
-}

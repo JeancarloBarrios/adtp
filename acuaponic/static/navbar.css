@@ -1,0 +1,139 @@
+*,
+*:after,
+*::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navbar-default {
+
+    background-color: #003366;
+
+}
+
+.navbar-nav li a {
+    line-height: 50px;
+    height: 50px;
+    padding-top: 0;
+}
+
+.navbar-nav li a img {
+    line-height: 45px;
+    height: 45px;
+    padding-top: 0;
+    border-radius: 45px/15px;
+}
+
+#top-navbar{
+    display: block;
+
+}
+#wrapper{
+    height: 50px;
+
+}
+#sidebar-wrapper {
+    background: #003366;
+    position: static;
+    height: 100%;
+    width: 20%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    float: left;
+}
+
+#sidebar-wrapper:hover {
+    width: 5%;
+    /*background: rgba(9, 89, 173, .8)*/
+
+
+
+}
+
+
+#sidebar-wrapper a{
+    color: #ffffff;
+}
+
+.sidebar-menu ul {
+    box-sizing: border-box;
+    margin-top: 60px;
+    padding-left: 0;
+    margin-left: 40px;
+
+
+}
+
+a.dropdown-toggle.menu,a.sidebar-text.visible{
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.sidebar-menu li {
+
+    padding-top: 15px;
+    color: #ffffff;
+    font-size: 2em;
+    padding-bottom: 20px;
+    list-style-type: none;
+    /*background: linear-gradient(to right, #003366 50%, #417690 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+    transition:all 0.5s ease;*/
+}
+.sidebar-menu li:hover{
+    /*background-position:right bottom;*/
+
+}
+#sidebar-wrapper.collapsed {
+    width: 7%;
+
+}
+
+
+#sidebar-wrapper.not-collapsed {
+    background: #003366;
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+#sidebar-wrapper a.visible {
+   /* display: inline;*/
+}
+#sidebar-wrapper a.hidden {
+    display: none;
+}
+
+
+.glyphicon.glyphicon-folder-open{
+    margin-left: 0;
+}
+
+#page-content-wrapper.not-collapsed{
+    width: 80%;
+    float: right;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+#page-content-wrapper.collapsed{
+
+    width: 75%;
+    float: right;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+i, .glyphicon.glyphicon-folder-open{
+    padding-right: 15px;
+}
