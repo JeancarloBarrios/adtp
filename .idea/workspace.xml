@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="30ef8f37-89dc-4b2f-a768-abbf8cdbda0f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acuaponic/acuaponic/settings.py" afterPath="$PROJECT_DIR$/acuaponic/acuaponic/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acuaponic/p2/urls.py" afterPath="$PROJECT_DIR$/acuaponic/p2/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acuaponic/p2/views.py" afterPath="$PROJECT_DIR$/acuaponic/p2/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acuaponic/p2/cron.py" afterPath="$PROJECT_DIR$/acuaponic/p2/cron.py" />
     </list>
     <ignored path="perra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acuaponic/acuaponic/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28767124">
-              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cron.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/acuaponic/p2/cron.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9589041">
+              <caret line="71" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,18 +98,6 @@
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/acuaponic/medd/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,11 +152,11 @@
         <option value="$PROJECT_DIR$/acuaponic/templates/p2/home.html" />
         <option value="$PROJECT_DIR$/acuaponic/p2/admin.py" />
         <option value="$PROJECT_DIR$/acuaponic/p2/chart.py" />
-        <option value="$PROJECT_DIR$/acuaponic/p2/cron.py" />
         <option value="$PROJECT_DIR$/acuaponic/templates/p2/show.html" />
         <option value="$PROJECT_DIR$/acuaponic/p2/urls.py" />
         <option value="$PROJECT_DIR$/acuaponic/p2/views.py" />
         <option value="$PROJECT_DIR$/acuaponic/acuaponic/settings.py" />
+        <option value="$PROJECT_DIR$/acuaponic/p2/cron.py" />
       </list>
     </option>
   </component>
@@ -590,16 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acuaponic/p2/cron.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acuaponic/medd/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -672,6 +659,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/acuaponic/acuaponic/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/acuaponic/p2/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -682,10 +677,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acuaponic/acuaponic/settings.py">
+    <entry file="file://$PROJECT_DIR$/acuaponic/p2/cron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28767124">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.9589041">
+          <caret line="71" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>

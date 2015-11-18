@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'gunicorn',
     'medd',
     'p2',
-    'django_cron',
+    # 'django_cron',
     # 'chart_tools'
 )
 
