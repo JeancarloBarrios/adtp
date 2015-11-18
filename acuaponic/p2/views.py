@@ -80,3 +80,8 @@ def checktemp(request):
     tmp = f
 
     return render(request, 'p2/home.html', { 'tmp': tmp})
+
+
+def show(request):
+    db = hist.objects.all()
+    return render(request, 'p2/show.html', { 'db': db})

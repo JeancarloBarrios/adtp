@@ -11,4 +11,5 @@ urlpatterns = (
     # url(r'^serve/$', views.serve, name="serve"),
     url(r'^temp/$', views.checktemp, name="temp"),
     url(r'^save/$', views.save, name="save"),
+    url(r'^show/$', views.show, name="show"),
 )

@@ -1,0 +1,17 @@
+{% extends "p2/base.html" %}
+{% load static from staticfiles %}
+{% load i18n %}
+{% block body_block %}
+% if db %}
+                {% for db in db %}
+                    <div class="medicina">
+                        <div class="name">
+
+                            <h1> <a href="">{{ db.created_at }}:   {{ db.temperature }}  State: {{ db.state :w}}</a> </h1>
+                            </div>
+                    </div>
+                    {% endfor %}
+            {% endif %}
+
+
+{% endblock %}
