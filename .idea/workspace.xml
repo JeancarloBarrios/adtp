@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c611e9f3-4573-41f9-bb6d-fcaf519f90e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acuaponic/acuaponic/settings.py" afterPath="$PROJECT_DIR$/acuaponic/acuaponic/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acuaponic/p2/cron.py" afterPath="$PROJECT_DIR$/acuaponic/p2/cron.py" />
     </list>
     <ignored path="perra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +51,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/acuaponic/acuaponic/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38356164">
-              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.5684931">
+              <caret line="68" column="107" selection-start-line="68" selection-start-column="107" selection-end-line="68" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -634,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/acuaponic/acuaponic/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38356164">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.5684931">
+          <caret line="68" column="107" selection-start-line="68" selection-start-column="107" selection-end-line="68" selection-end-column="107" />
           <folding />
         </state>
       </provider>
