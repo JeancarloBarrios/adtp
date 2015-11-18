@@ -13,12 +13,12 @@ class updateTemp(CronJobBase):
 	code = 'p2.update_temp' 	# a unique code
 
 	def do(self):
-
+            print "it worked"
 
 		#whatever method to update the temperature and display it
 
 
-            return HttpResponse("it works")
+
 
 class updateDB(CronJobBase):
 	RUN_EVERY_MINS = 60  #Every hour?

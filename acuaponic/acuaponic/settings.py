@@ -78,6 +78,8 @@ LOGGING = {
     },
 }
 
+ALLOW_PARALLEL_RUNS = True
+
 ROOT_URLCONF = 'acuaponic.urls'
 
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
