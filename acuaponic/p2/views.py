@@ -38,7 +38,7 @@ def save(request):
 
     tmp = read_temp()
     o = hist(temperature=tmp, state="ok")
-
+    o.save()
     return render(request, 'p2/home.html', { 'tmp': tmp})
 
 
