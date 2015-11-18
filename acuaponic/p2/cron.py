@@ -8,14 +8,15 @@ from django.http import HttpResponseRedirect, HttpResponse
 
 
 class updateTemp(CronJobBase):
-	RUN_EVERY_MINS = 1 # every minute
+	RUN_EVERY_MINS = 5 # every minute
 	schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
 	code = 'p2.update_temp' 	# a unique code
 
 	def do(self):
             print "it worked"
 
-		#whatever method to update the temperature and display it
+
+    #whatever method to update the temperature and display it
 
 
 
