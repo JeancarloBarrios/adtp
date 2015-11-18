@@ -37,7 +37,13 @@ def save(request):
             return temp_f
 
     tmp = read_temp()
-    o = hist(temperature=tmp, state="ok")
+    t = float(tmp)
+    if t>100.0:
+        s = "danger"
+    else:
+        s = "ok"
+    o = hist(temperature=tmp, state=s)
+
     o.save()
     return render(request, 'p2/home.html', { 'tmp': tmp})
 
