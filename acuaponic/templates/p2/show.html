@@ -2,7 +2,7 @@
 {% load static from staticfiles %}
 {% load i18n %}
 {% block body_block %}
-% if db %}
+{% if db %}
                 {% for db in db %}
                     <div class="medicina">
                         <div class="name">
