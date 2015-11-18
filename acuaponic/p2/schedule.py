@@ -9,7 +9,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 class updateTemp(CronJobBase):
 	RUN_EVERY_MINS = 1 # every minute
 	schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
-	code = 'my_app.update_temp' 	# a unique code
+	code = 'p2.update_temp' 	# a unique code
 	
 	def do(self):
 
