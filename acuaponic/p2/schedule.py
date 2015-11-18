@@ -37,7 +37,7 @@ class updateTemp(CronJobBase):
                 # return temp_c, temp_f
                 return temp_f
 
-        return HttpResponse(read_temp())
+            return HttpResponse(read_temp())
 	
 class updateDB(CronJobBase):
 	RUN_EVERY_MINS = 60  #Every hour?
