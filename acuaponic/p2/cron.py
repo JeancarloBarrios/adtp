@@ -24,7 +24,7 @@ class updateTemp(CronJobBase):
 class updateDB(CronJobBase):
 	RUN_EVERY_MINS = 60  #Every hour?
 	schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
-	code = 'my_app.update_DB' 	# a unique code
+	code = 'p2.update_DB' 	# a unique code
 
 	def do(self):
 		base_dir = '/sys/bus/w1/devices/'

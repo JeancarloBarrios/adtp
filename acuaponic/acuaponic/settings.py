@@ -57,6 +57,7 @@ MIDDLEWARE_CLASSES = (
 
 CRON_CLASSES = [
     'p2.cron.updateTemp',
+    'p2.update_DB',
 ]
 
 
