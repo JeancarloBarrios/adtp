@@ -57,6 +57,27 @@ MIDDLEWARE_CLASSES = (
 CRON_CLASSES = [
     'p2.schedule.updateTemp',
 ]
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': '/home/user/www/logs/django.log',
+            },
+        },
+    'loggers': {
+        'django_cron': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+
 ROOT_URLCONF = 'acuaponic.urls'
 
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
