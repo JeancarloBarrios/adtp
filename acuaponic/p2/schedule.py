@@ -14,7 +14,7 @@ class updateTemp(CronJobBase):
 	def do(self):
 
 		#whatever method to update the temperature and display it
-		base_dir = '/sys/bus/w1/devices/'
+        base_dir = '/sys/bus/w1/devices/'
         device_folder = glob.glob(base_dir + '28*')[0]
         device_file = device_folder + '/w1_slave'
 
