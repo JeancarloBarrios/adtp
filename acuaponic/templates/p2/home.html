@@ -2,8 +2,9 @@
 {% load static from staticfiles %}
 {% load i18n %}
 {% block body_block %}
-<form method="post" action="">
+<form method="post" action="/save/">
     {% csrf_token %}
+
     <h1> <a href="">{{ tmp }}</a> </h1>
     <input type="submit" value="Save Temperature" />
 </form>
