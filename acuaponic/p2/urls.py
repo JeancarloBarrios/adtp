@@ -8,8 +8,9 @@ admin.autodiscover()
 urlpatterns = (
     url(r'^$', views.home, name="home"),
     #url(r'^dis/(?P<slug>[\w\-]+)/$', views.medicine_search, name="fredy"),
-    # url(r'^serve/$', views.serve, name="serve"),
+    url(r'^servo/$', views.servo, name="servo"),
     url(r'^temp/$', views.checktemp, name="temp"),
     url(r'^save/$', views.save, name="save"),
     url(r'^show/$', views.show, name="show"),
+
 )

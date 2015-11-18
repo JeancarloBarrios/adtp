@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'medd',
     'p2',
     'django_cron',
-    'chart_tools'
+    # 'chart_tools'
 )
 
 MIDDLEWARE_CLASSES = (
