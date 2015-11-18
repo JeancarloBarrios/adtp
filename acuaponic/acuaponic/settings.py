@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'gunicorn',
     'medd',
     'p2',
+    'django_cron',
 )
 
 MIDDLEWARE_CLASSES = (
