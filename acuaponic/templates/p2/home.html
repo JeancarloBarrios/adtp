@@ -4,7 +4,7 @@
 {% block body_block %}
 <form method="post" action="">
     {% csrf_token %}
-    {% tmp %}
+    {{ tmp }}
     <input type="submit" value="Save Temperature" />
 </form>
 
