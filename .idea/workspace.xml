@@ -37,10 +37,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/acuaponic/p2/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79452056">
-              <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.5273973">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+                <marker date="1447854719253" expanded="true" signature="2262:2803" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -676,10 +677,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/acuaponic/p2/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79452056">
-          <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.5273973">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <marker date="1447854719253" expanded="true" signature="2262:2803" placeholder="..." />
           </folding>
         </state>
       </provider>

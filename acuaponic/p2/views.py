@@ -89,24 +89,24 @@ def show(request):
     db = hist.objects.all()
     return render(request, 'p2/show.html', { 'db': db})
 
-def serve(request):
-    GPIO.setmode(GPIO.BOARD)
-    GPIO.setup(3, GPIO.OUT)
-    # GPIO.output(3, True)
-    if request.method == 'POST':
-
-
-            print "while"
-            p = GPIO.PWM(3, 100)
-            p.start(5)
-            p.ChangeDutyCycle(4.5)
-            time.sleep(0.5)
-            # p.ChangeDutyCycle(7.5)
-            time.sleep(1)
-            # print i
-            # print qty
-            #i = i + 1
-    GPIO.cleanup()
-
-
-    return render(request, 'medd/home.html', {'medicina': medicina})
+# def serve(request):
+#     GPIO.setmode(GPIO.BOARD)
+#     GPIO.setup(3, GPIO.OUT)
+#     # GPIO.output(3, True)
+#     if request.method == 'POST':
+#
+#
+#             print "while"
+#             p = GPIO.PWM(3, 100)
+#             p.start(5)
+#             p.ChangeDutyCycle(4.5)
+#             time.sleep(0.5)
+#             # p.ChangeDutyCycle(7.5)
+#             time.sleep(1)
+#             # print i
+#             # print qty
+#             #i = i + 1
+#     GPIO.cleanup()
+#
+#
+#     return render(request, 'medd/home.html', {'medicina': medicina})
