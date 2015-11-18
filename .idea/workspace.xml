@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30ef8f37-89dc-4b2f-a768-abbf8cdbda0f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acuaponic/acuaponic/settings.py" afterPath="$PROJECT_DIR$/acuaponic/acuaponic/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acuaponic/p2/cron.py" afterPath="$PROJECT_DIR$/acuaponic/p2/cron.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acuaponic/p2/views.py" afterPath="$PROJECT_DIR$/acuaponic/p2/views.py" />
     </list>
     <ignored path="perra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/acuaponic/p2/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.79452056">
+              <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -57,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cron.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cron.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acuaponic/p2/cron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9589041">
-              <caret line="71" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -154,9 +153,9 @@
         <option value="$PROJECT_DIR$/acuaponic/p2/chart.py" />
         <option value="$PROJECT_DIR$/acuaponic/templates/p2/show.html" />
         <option value="$PROJECT_DIR$/acuaponic/p2/urls.py" />
-        <option value="$PROJECT_DIR$/acuaponic/p2/views.py" />
         <option value="$PROJECT_DIR$/acuaponic/acuaponic/settings.py" />
         <option value="$PROJECT_DIR$/acuaponic/p2/cron.py" />
+        <option value="$PROJECT_DIR$/acuaponic/p2/views.py" />
       </list>
     </option>
   </component>
@@ -667,21 +666,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acuaponic/p2/views.py">
+    <entry file="file://$PROJECT_DIR$/acuaponic/p2/cron.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acuaponic/p2/cron.py">
+    <entry file="file://$PROJECT_DIR$/acuaponic/p2/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9589041">
-          <caret line="71" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.79452056">
+          <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

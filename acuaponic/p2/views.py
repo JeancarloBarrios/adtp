@@ -106,7 +106,7 @@ def serve(request):
             # print i
             # print qty
             #i = i + 1
-        GPIO.cleanup()
+    GPIO.cleanup()
 
 
     return render(request, 'medd/home.html', {'medicina': medicina})
