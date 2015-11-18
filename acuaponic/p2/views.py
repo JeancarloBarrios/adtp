@@ -39,4 +39,7 @@ def checktemp(request):
             # return temp_c, temp_f
             return temp_f
 
-    return HttpResponse(read_temp())
+    f = read_temp()
+    tmp = f
+
+    return render(request, 'p2/home.html', { 'tmp': tmp})
