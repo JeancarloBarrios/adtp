@@ -3,6 +3,7 @@ from . import views
 import os
 import glob
 import time
+import logging
 from django.http import HttpResponseRedirect, HttpResponse
 
 

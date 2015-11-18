@@ -66,7 +66,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/home/user/www/logs/django.log',
+            'filename': '/home/pi/Developing/ADT/Acuaponics/test/lib/python2.7/site-packages/django/',
             },
         },
     'loggers': {
