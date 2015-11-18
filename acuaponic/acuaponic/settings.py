@@ -54,6 +54,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
+CRON_CLASSES = (
+    'p2.schedule.updateTemp',
+)
 ROOT_URLCONF = 'acuaponic.urls'
 
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')

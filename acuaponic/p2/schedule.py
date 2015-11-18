@@ -1,5 +1,5 @@
 from django_cron import CronJobBase, Schedule
-
+from . import views
 
 class updateTemp(CronJobBase):
 	RUN_EVERY_MINS = 1 # every minute
@@ -7,7 +7,7 @@ class updateTemp(CronJobBase):
 	code = 'my_app.update_temp' 	# a unique code
 	
 	def do(self):
-		pass
+		views.checktemp
 		#whatever method to update the temperature and display it
 		
 	
