@@ -1,5 +1,10 @@
 from django_cron import CronJobBase, Schedule
 from . import views
+import os
+import glob
+import time
+from django.http import HttpResponseRedirect, HttpResponse
+
 
 class updateTemp(CronJobBase):
 	RUN_EVERY_MINS = 1 # every minute
@@ -7,9 +12,32 @@ class updateTemp(CronJobBase):
 	code = 'my_app.update_temp' 	# a unique code
 	
 	def do(self):
-		views.checktemp
+
 		#whatever method to update the temperature and display it
-		
+		base_dir = '/sys/bus/w1/devices/'
+        device_folder = glob.glob(base_dir + '28*')[0]
+        device_file = device_folder + '/w1_slave'
+
+        def read_temp_raw():
+            f = open(device_file, 'r')
+            lines = f.readlines()
+            f.close()
+            return lines
+
+        def read_temp():
+            lines = read_temp_raw()
+            while lines[0].strip()[-3:] != 'YES':
+                time.sleep(0.2)
+                lines = read_temp_raw()
+            equals_pos = lines[1].find('t=')
+            if equals_pos != -1:
+                temp_string = lines[1][equals_pos+2:]
+                temp_c = float(temp_string) / 1000.0
+                temp_f = temp_c * 9.0 / 5.0 + 32.0
+                # return temp_c, temp_f
+                return temp_f
+
+        return HttpResponse(read_temp())
 	
 class updateDB(CronJobBase):
 	RUN_EVERY_MINS = 60  #Every hour?
